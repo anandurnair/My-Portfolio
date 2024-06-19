@@ -2,32 +2,63 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+section {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    overflow: hidden;
+    /* padding: 50px; */
   }
-}
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+  section h2{
   }
+  
+  section:nth-child(2) {
+  }
+  
+  section:nth-child(3) {
+   margin-top: 200px;
+  }
+  
+  section:nth-child(4) {
+    height: 150vh;
+    margin-top: 200px;
+    /* background: #0077ff; */
+  }
+  section:nth-child(5) {
+    margin-top: 100px;
+  }
+  
+  section span {
+    display: block;
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  
+  .progress-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 10px;
+    background: var(--red);
+    transform-origin: 0%;
+  }
+
+  span{
+    font-size: 4rem;
+  }
+
+  /* toastStyles.css */
+.Toastify__toast-container {
+  width: 400px; /* Adjust width as needed */
+}
+
+.Toastify__toast {
+  font-size: 16px; /* Adjust font size as needed */
+  padding: 10px;   /* Adjust padding as needed */
+}
+
+.Toastify__toast-body {
+  display: flex;
+  align-items: center;
 }
