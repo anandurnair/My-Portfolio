@@ -1,4 +1,4 @@
-"use client";
+'use client'
 import React from "react";
 import {
   Navbar,
@@ -6,10 +6,7 @@ import {
   NavbarContent,
   NavbarItem,
   NavbarMenuToggle,
-  NavbarMenu,
-  NavbarMenuItem,
   Link,
-  Switch,
 } from "@nextui-org/react";
 
 import ThemeSwitcher from "./themeSwitcher";
@@ -43,10 +40,10 @@ export default function Header() {
         </NavbarBrand>
       </NavbarContent>
 
-      <NavbarContent justify="center"className="gap-x-10" >
-        <NavbarItem className="hidden lg:flex">
-          <Link href="#skills" className="text-white  font-semibold">
-          <p> MY SKILLS</p>
+      <NavbarContent justify="center" className="gap-x-10 hidden lg:flex">
+        <NavbarItem>
+          <Link href="#skills" className="text-white font-semibold">
+            MY SKILLS
           </Link>
         </NavbarItem>
         <NavbarItem>
@@ -56,39 +53,16 @@ export default function Header() {
         </NavbarItem>
         <NavbarItem>
           <Link href="#contact" className="text-white font-semibold">
-            CONTACT 
+            CONTACT
           </Link>
         </NavbarItem>
-        
       </NavbarContent>
+
       <NavbarContent justify="end">
-        {/* <NavbarItem className="hidden lg:flex">
-          <Link href="#">Login</Link>
-        </NavbarItem> */}
         <NavbarItem>
           <ThemeSwitcher />
         </NavbarItem>
       </NavbarContent>
-      {/* <NavbarMenu>
-        {menuItems.map((item, index) => (
-          <NavbarMenuItem key={`${item}-${index}`}>
-            <Link
-              color={
-                index === 2
-                  ? "primary"
-                  : index === menuItems.length - 1
-                  ? "danger"
-                  : "foreground"
-              }
-              className="w-full"
-              href="#"
-              size="lg"
-            >
-              {item}
-            </Link>
-          </NavbarMenuItem>
-        ))}
-      </NavbarMenu> */}
     </Navbar>
   );
 }

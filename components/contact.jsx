@@ -58,16 +58,17 @@ const Contacts = () => {
         </div>
 
         {/* Right Section (Form) */}
-        <div className="sm:w-2/4  sm:pl-10 sm:pr-5 pt-14">
+        <div className="sm:w-full  sm:pl-20 sm:pr-5 pt-14">
           <h1 className="text-5xl font-semibold">Contact</h1>
           <h2 className="text-2xl mt-5 font-medium">Get In Touch.</h2>
-          <div className="pt-10 w-full sm:w-2/3">
+          <div className="pt-10 w-full sm:w-full">
             <Input
               value={name}
               type="text"
               label="Name"
               placeholder="Enter your name"
               variant="bordered"
+              className="min-w-[280px]"
               onChange={(e) => setName(e.target.value)}
             />
             <Input

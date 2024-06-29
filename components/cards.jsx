@@ -12,7 +12,7 @@ import Link from "next/link";
 export default function Cards() {
   return (
     <div className=" gap-4 grid grid-cols-12 grid-rows-2 ">
-       <Card className=" col-span-12  sm:col-span-4 h-[300px]">
+       <Card className=" col-span-12  sm:col-span-4 min-h-[300px]  ">
         <CardHeader className="absolute z-10 top-1 flex-col !items-start">
           <h4 className="text-white font-medium text-large">Palatte</h4>
         </CardHeader>
@@ -22,7 +22,7 @@ export default function Cards() {
           className="z-0 w-full h-full object-cover"
           src="/images/projectThumbnails/palatte.png"
         />
-        <CardFooter className="flex gap-3 justify-between">
+        <CardFooter className="flex gap-3 justify-between h-auto ">
           <p className="text-tiny tracking-wide font-bold drop-shadow text-left">
           Palatte is a innovative social media platform with freelancing features, built on Next.js and Express.js.
           </p>
