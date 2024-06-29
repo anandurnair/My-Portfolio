@@ -22,11 +22,11 @@ export default function Cards() {
           className="z-0 w-full h-full object-cover"
           src="/images/projectThumbnails/palatte.png"
         />
-        <CardFooter className="flex gap-3">
+        <CardFooter className="flex gap-3 justify-between">
           <p className="text-tiny tracking-wide font-bold drop-shadow text-left">
           Palatte is a innovative social media platform with freelancing features, built on Next.js and Express.js.
           </p>
-          <Link href="https://www.pixelgames.anandu.site/signup">
+          <Link href="https://www.palatte.anandu.site">
             {" "}
             <Button
               className="text-tiny "
@@ -37,7 +37,7 @@ export default function Cards() {
               Live link
             </Button>
           </Link>
-          <Link href="https://github.com/anandurnair/Pixel-Games">
+          <Link href="https://github.com/anandurnair/palatte">
             <Button
               className="text-tiny "
               color="default"
@@ -98,14 +98,14 @@ export default function Cards() {
           className="z-0 w-full h-full object-cover"
           src="/images/projectThumbnails/netflix2.png"
         />
-        <CardFooter className="flex gap-3">
+        <CardFooter className="flex gap-3 justify-between">
           <p className="text-tiny  tracking-wide font-bold drop-shadow">
             A netflix clone using React and TMDB{" "}
           </p>
           {/* <Button className="text-tiny " color="default" radius="full" size="sm">
             Live link
           </Button> */}
-          <Link href="https://github.com/anandurnair/Netflix-clone" className="flex">
+          <Link href="https://github.com/anandurnair/netflix" className="flex">
             <Button
               className="text-tiny "
               color="default"
@@ -158,7 +158,7 @@ export default function Cards() {
           className="z-0 w-full h-full object-cover"
           src="/images/projectThumbnails/quiz1.png"
         />
-        <CardFooter className="flex gap-3">
+        <CardFooter className="flex gap-3 justify-between">
           <p className="text-tiny  tracking-wide font-bold drop-shadow">
             A Quiz app using NextJS{" "}
           </p>
@@ -187,16 +187,17 @@ export default function Cards() {
           className="z-0 w-full h-full object-cover"
           src="/images/projectThumbnails/todo.png"
         />
-        <CardFooter className="flex gap-3">
+        <CardFooter className="flex gap-3 justify-between">
           <p className="text-tiny  tracking-wide font-bold drop-shadow">
             A todo list using ReactJS
           </p>
-          <Link href="" className="flex">
+          <Link href="https://github.com/anandurnair/todo-application" className="flex">
             <Button
               className="text-tiny "
               color="default"
               radius="full"
               size="sm"
+              
             >
               Repo
             </Button>
